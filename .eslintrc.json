@@ -1,0 +1,45 @@
+{
+  "rules": {
+    "@next/next/no-html-link-for-pages": "warn",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": "off",
+    "react/no-children-prop": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [".ts", ".tsx"],
+      "parserOptions": {
+        "project": "tsconfig.json"
+      }
+    },
+    {
+      "files": [".js", ".jsx"],
+      "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest",
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      }
+    }
+  ],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:react/jsx-runtime"
+  ],
+  "plugins": ["react", "unused-imports"]
+}
