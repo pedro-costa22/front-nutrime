@@ -1,6 +1,6 @@
 'use client';
 import Button from '@/components/Button';
-import Input from '@/components/Input/page';
+import Input from '@/components/Input';
 import ThemeSwitch from '@/components/ThemeButton';
 import { Manrope } from 'next/font/google';
 import { useState } from 'react';

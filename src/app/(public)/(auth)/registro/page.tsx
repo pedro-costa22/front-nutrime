@@ -1,7 +1,7 @@
 'use client';
 import Button from '@/components/Button';
 import Checkbox from '@/components/Checkbox';
-import Input from '@/components/Input/page';
+import Input from '@/components/Input';
 import Select from '@/components/Select';
 import { useUserStore } from '@/stores/user.store';
 import { Manrope } from 'next/font/google';

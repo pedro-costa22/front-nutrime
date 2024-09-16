@@ -3,7 +3,7 @@ import { Manrope } from 'next/font/google';
 import '@/app/globals.css';
 import ThemeSwitch from '@/components/ThemeButton';
 import { TfiEmail } from 'react-icons/tfi';
-import Input from '@/components/Input/page';
+import Input from '@/components/Input';
 import Button from '@/components/Button';
 
 const manrope = Manrope({ weight: ['700', '300', '500'], subsets: ['latin'] });
